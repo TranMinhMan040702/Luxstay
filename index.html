@@ -194,15 +194,44 @@
                 </nav>
             </div>
         </header>
-
-        <!-- Begin slider -->
-        <div class="slider">
-
-        </div>
-
-        <!-- Begin container -->
-        <div class="container">
-
+        <div class="app-container">
+            <!-- Begin slider -->
+            <div class="grid wide slider">
+                <div class="slides">
+                    <!-- begin input -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <!-- end input -->
+    
+                    <!-- begin slide img -->
+                    <div class="slide first">
+                        <img src="./assets/img/slide1.png" alt="" class="slide__img">
+                    </div>
+                    <div class="slide ">
+                        <img src="./assets/img/slide2.png" alt="" class="slide__img">
+                    </div>
+                    <!-- end slide img -->
+    
+                    <!-- automatic navagation start -->
+                    <div class="navagation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+                    <!-- automatic navagation end -->
+    
+                    <!-- manual navagation start -->
+                    <div class="navagation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+                    <!-- manual navagation end -->
+                </div>
+            </div>
+    
+            <!-- Begin container -->
+            <div class="container">
+    
+            </div>
         </div>
 
         <!-- Begin footer -->
@@ -211,5 +240,18 @@
 
         </footer>
     </div>
+
+    <script>
+        var counter = 1;
+        document.getElementById('radio1').checked = true;
+        counter++;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 2){
+                counter = 1;
+            }
+        }, 8000)
+    </script>
 </body>
 </html>
