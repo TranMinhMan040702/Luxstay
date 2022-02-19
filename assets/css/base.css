@@ -1,0 +1,22 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+:root {
+    --white-color: #fff;
+    --text-color: #222222;
+    --icon-color: #666;
+    --border-color: #e7e7e7;
+    --hover-color: #f65e39;
+}
+
+/*  */
