@@ -590,14 +590,18 @@
     font-size: 2.8rem;
     color: var(--text-color);
     line-height: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .content__sub-heading {
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--sub-heading-color);
     margin-bottom: 20px;
+    position: relative;
+}
 
+.content__sub-heading.text-color {
+    color: var(--text-color);
 }
 
 .content__sub-link {
@@ -610,12 +614,26 @@
 }
 
 /* place famous */
+.place-container {
+    margin-bottom: 36px;
+}
+
+.place-content {
+    position: relative;
+}
+
+.place__list {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
 .place__item {
     position: relative;
     width: 100%;
     height: 300px;
     background-size: cover;
     border-radius: 3px;
+    display: inline-block;
 }
 
 .place__item-des {
@@ -631,15 +649,180 @@
 }
 
 .place__item-sub-heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     opacity: 0.9;
 }
 
 .place__item-sub-heading span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.6rem;
 }
 
 
+/* exclusive offers */
+.offers-container {
+    margin-bottom: 36px;
+}
 
+.offers-content {
+    position: relative;
+}
 
+.content__sub-view-more {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: var(--hover-color);
+    transition: all linear 0.2s;
+}
+
+.content__sub-view-more:hover {
+    opacity: 0.8;
+}
+
+.offers__list {
+    height: 180px;
+}
+
+.offers__item {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.frame-shawdow {
+    position: absolute;
+    z-index: -1;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    filter: blur(15px);
+}
+
+.shawdow-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* sugguest luxstay */
+.sugguest-luxstay-container {
+    margin: 35px 0 70px;
+}
+
+.sugguest-luxstay__item:hover .sugguest-luxstay__des {
+    color: var(--hover-color);
+}
+
+.sugguest-luxstay__link {
+    display: block;
+    text-decoration: none;
+}
+
+.sugguest-luxstay__img {
+    height: 190px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.sugguest-luxstay__label,
+.sugguest-luxstay__des {
+    display: block;
+    font-size: 1.5rem;
+    color: #222;
+    opacity: 0.9;
+}
+
+.sugguest-luxstay__label {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 16px 0 10px;
+}
+
+.sugguest-luxstay__des {
+    line-height: 2.4rem;
+    font-weight: 400;
+    transition: all linear 0.2s;
+}
+
+/* suggest discovery */
+.sugguest-discovery-content {
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.sugguest-discovery__list {
+    height: 260px;
+}
+
+.sugguest-discovery__item {
+    height: 100%;
+}
+
+.sugguest-discovery__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    background-color: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sugguest-discovery__header {
+    padding: 24px;
+    position: relative;
+}
+
+.sugguest-discovery__header::before {
+    content: "";
+    position: absolute;
+
+}
+
+.sugguest-discovery__title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    padding: 4px 30px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #bebebe;
+    line-height: 1.6rem;
+    letter-spacing: 0.12rem;
+    transition: all linear 0.2s;
+}
+
+.sugguest-discovery__title:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sugguest-discovery__body {
+    padding: 24px;
+    flex: 1;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+    position: relative;
+}
+
+.sugguest-discovery__des {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white-color);
+    position: absolute;
+    bottom: 36px;
+    left: 24px;
+    line-height: 2.8rem;
+    width: 88%;
+}

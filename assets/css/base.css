@@ -17,6 +17,51 @@ html {
     --icon-color: #666;
     --border-color: #e7e7e7;
     --hover-color: #f65e39;
+    --sub-heading-color: #555;
 }
 
-/*  */
+/* Click btn */
+
+.click-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.click-btn-icon {
+    font-size: 2rem;
+    color: var(--text-color);
+    line-height: 56px;
+    transition: all linear 0.2s;
+}
+
+.btn-left {
+    left: -12px;
+}
+
+.btn-right {
+    right: -12px;
+}
+
+.click-btn:hover .click-btn-icon {
+    color: var(--hover-color);
+}
+
+.click-btn.no-active {
+    opacity: 0.5;
+    cursor: default;
+    user-select: unset;
+}
+
+.click-btn.no-active .click-btn-icon {
+    color: var(--text-color);
+}
