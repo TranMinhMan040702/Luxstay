@@ -826,3 +826,136 @@
     line-height: 2.8rem;
     width: 88%;
 }
+
+.user-manual-mb {
+    margin-bottom: 60px;
+}
+
+/* intruction */
+.intruction-container {
+    margin-bottom: 66px;
+}
+
+.intruction__content-img {
+    height: 70px;
+    width: 343px;
+    margin-bottom: 20px;
+}
+
+.intruction__content-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: var(--text-color);
+}
+
+.intruction__content-des p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 2.4rem;
+    margin: 40px 0;
+}
+
+.intruction__content-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_qr-code-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+}
+
+.qr-img {
+    width: 100%;
+    height: 100%;
+}
+
+.app__download-link {
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+}
+
+.app__download-img {
+    width: 140px;
+    height: 43px;
+}
+
+.intruction__img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+/* contact */
+.contact__img {
+    width: 170px;
+    height: 35px;
+}
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact__icon {
+    font-size: 3rem;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.contact__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    line-height: 2.2rem;
+}
+
+.contact__link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    transition: all linear 0.2s;
+}
+
+.contact__link:hover {
+    color: var(--hover-color);
+}
+
+/* homestay love */
+.footer__title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    height: 32px;
+    line-height: 32px;
+    transition: all linear 0.2s;
+}
+
+.footer__link:hover {
+    color: var(--hover-color);
+}
